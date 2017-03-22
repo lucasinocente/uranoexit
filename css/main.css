@@ -1,0 +1,290 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+@font-face {
+  font-family: 'Sacramento';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sacramento'), local('Sacramento-Regular'), url(http://themes.googleusercontent.com/static/fonts/sacramento/v1/WFDkXpubrEwopJnSlHV6CBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(http://themes.googleusercontent.com/static/fonts/amaticsc/v3/DPPfSFKxRTXvae2bKDzp5D8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+body {
+    position: relative;
+}
+
+section {
+    background-size: cover;
+    background-position: center;
+    height: 870px;
+    width: 100%;
+    position: relative;
+}
+
+.home {
+    background-image: url(../img/home.jpg);
+    background-attachment: fixed;
+}
+.soundcloud {
+    background-image: url(../img/soundcloud.jpg);
+    z-index: 5;
+}
+.social {
+    background-image: url(../img/social.jpg);
+}
+
+.container {
+    padding-top: 705px;
+}
+
+.home h1 {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    padding: 11px;
+    color: white;
+    font-weight: 100;
+    font-family: 'Sacramento';
+    font-size: 100px;
+    height: 500px;
+    width: 100%;
+    margin-top: -360px;
+    line-height: 500px;
+    text-shadow: 3px 3px #333;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.soundcloud .player {
+    position: absolute;
+    top: -245px;
+    left: 10%;
+    width: 80%;
+    height: 490px;
+    padding: 20px;
+    background-image: url(../img/bg.jpg);
+}
+
+.text {
+    background-image: url(../img/bg.jpg);
+    color: #222;
+    padding: 0px 0px 10px 0px;
+    position: relative;
+    z-index: 10;
+    text-align: justify;
+}
+
+.text p {
+    padding: 20px 20px 10px;
+    margin: 0px;
+}
+
+.text p:first-letter {
+    font-family: 'Sacramento';
+    font-size: 400%;
+    display: block;
+    padding: 0px 10px 0px 0px;
+    float: left;
+    margin: 0px 0px -20px 0px;
+}
+
+.btn-default {
+    padding: 5px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.btn-default span {
+    font-family: 'Amatic SC';
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    display: block;
+    line-height: 100px;
+    border:2px dashed #222;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.btn-group {
+    text-align: center;
+}
+
+.btn-group .btn {
+    margin: 0px 10px;
+}
+
+.btn-default.btn-download {
+    position: absolute;
+    top: 390px;
+    left: 50%;
+    margin-left: -100px;
+    padding: 5px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+}
+
+.btn-default.btn-download span {
+    font-size: 40px;    
+    width: 200px;
+    height: 200px;
+    line-height: 50px;
+    padding-top: 45px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    border-radius: 200px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 20;
+}
+
+a {
+    color: whitesmoke;
+    display: block;
+    padding: 10px 20px;
+}
+
+a:hover {
+    color: #333;
+    background: whitesmoke;
+    text-decoration: none;
+}
+
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
