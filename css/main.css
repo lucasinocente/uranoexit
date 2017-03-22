@@ -1,4 +1,4 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*! HTML5 Boilerplate v4.3.0 | MIT License | https://h5bp.com/ */
 
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -51,14 +51,14 @@ html {
   font-family: 'Sacramento';
   font-style: normal;
   font-weight: 400;
-  src: local('Sacramento'), local('Sacramento-Regular'), url(http://themes.googleusercontent.com/static/fonts/sacramento/v1/WFDkXpubrEwopJnSlHV6CBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+  src: local('Sacramento'), local('Sacramento-Regular'), url(https://themes.googleusercontent.com/static/fonts/sacramento/v1/WFDkXpubrEwopJnSlHV6CBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Amatic SC';
   font-style: normal;
   font-weight: 400;
-  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(http://themes.googleusercontent.com/static/fonts/amaticsc/v3/DPPfSFKxRTXvae2bKDzp5D8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+  src: local('Amatic SC Regular'), local('AmaticSC-Regular'), url(https://themes.googleusercontent.com/static/fonts/amaticsc/v3/DPPfSFKxRTXvae2bKDzp5D8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
 body {
